@@ -20,7 +20,13 @@ storiesOf('Components', module)
      ))
      .addWithJSX('TransferStepsBar (completed)', () => (
 	 <div>Not Implemented!</div>
-    ));
+     ))
+     .addWithJSX('NumberInput', () => (
+	 <div>Not Implemented!</div>
+     ))
+     .addWithJSX('PhoneInput', () => (
+	 <div>Not Implemented!</div>
+     ));
 
 
 storiesOf('Header', module)
@@ -30,5 +36,15 @@ storiesOf('Header', module)
     .addWithJSX('Header', () => (
 	 <div>Not Implemented!</div>
     ));
+
+
+storiesOf('Send Screens', module)
+    .addWithJSX('SendForm', () => (
+	 <div>Not Implemented!</div>
+    ))
+    .addWithJSX('TransferInProgress', () => (
+	 <div>Not Implemented!</div>
+    ))
+
 
 
