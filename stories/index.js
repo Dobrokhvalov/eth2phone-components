@@ -1,12 +1,34 @@
 import './../css/bootstrap/css/bootstrap.css';
-import './../css/custom.css';
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Button from '../components/Button';
 
 
-storiesOf('Button', module)
-    .addWithJSX('with text', () => (
+storiesOf('Components', module)
+    .addWithJSX('Button', () => (
 	    <Button onClick={action('clicked')}>Hello Button</Button>
+    ))
+    .addWithJSX('Button (disabled)', () => (
+	    <Button onClick={action('clicked')} disabled={true}>Hello Button</Button>
+    ))
+    .addWithJSX('Button primary', () => (
+	    <Button onClick={action('clicked')} disabled={true} className={'primary'}>Hello Button</Button>
+    ))
+     .addWithJSX('TransferStepsBar (active)', () => (
+	 <div>Not Implemented!</div>
+     ))
+     .addWithJSX('TransferStepsBar (completed)', () => (
+	 <div>Not Implemented!</div>
     ));
+
+
+storiesOf('Header', module)
+    .addWithJSX('AddressButton', () => (
+	 <div>Not Implemented!</div>
+    ))
+    .addWithJSX('Header', () => (
+	 <div>Not Implemented!</div>
+    ));
+
+
