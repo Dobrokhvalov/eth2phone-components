@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Button } from 'react-bootstrap';
 
 
-class e2pButton extends React.Component {
+class e2pButtonPrimary extends React.Component {
     handleClick = () => {
         console.log("button pressed");
     };
@@ -10,11 +10,10 @@ class e2pButton extends React.Component {
     render() {
         return (
             <Button style={{
-                width: 133,
+                width: 205,
                 height: 38,
                 borderRadius: 12,
                 backgroundColor: this.props.buttonColor,
-                opacity: this.props.opacity,
                 color: this.props.fontColor,
                 fontSize: 18
             }} onClick={this.handleClick}>
@@ -25,4 +24,4 @@ class e2pButton extends React.Component {
 }
 
 
-export default e2pButton;
+export default e2pButtonPrimary;

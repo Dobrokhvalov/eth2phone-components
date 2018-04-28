@@ -3,17 +3,18 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Button from '../components/Button';
+import ButtonPrimary from '../components/ButtonPrimary';
 
 
 storiesOf('Components', module)
     .addWithJSX('Button', () => (
-	    <Button onClick={action('clicked')}>Hello Button</Button>
+	    <Button onClick={action('clicked')} className={'button'} fontColor={'white'} buttonColor={e2pColors.green} opacity={1}>Hello Button</Button>
     ))
     .addWithJSX('Button (disabled)', () => (
-	    <Button onClick={action('clicked')} disabled={true}>Hello Button</Button>
+	    <Button onClick={action('clicked')} className={'buttonDisabled'} fontColor={'white'} buttonColor={e2pColors.green} opacity={0.2} disabled={true}>Hello Button</Button>
     ))
     .addWithJSX('Button primary', () => (
-	    <Button onClick={action('clicked')} disabled={true} className={'primary'} fontColor={'white'} buttonColor={e2pColors.blue}>Hello Button</Button>
+	    <ButtonPrimary onClick={action('clicked')} className={'primary'} fontColor={'white'} buttonColor={e2pColors.blue}>Hello Button</ButtonPrimary>
     ))
      .addWithJSX('TransferStepsBar (active)', () => (
 	 <div>Not Implemented!</div>
@@ -47,5 +48,6 @@ storiesOf('Send Screens', module)
     ))
 
 const e2pColors = {
-    blue: '#0099ff'
+    blue: '#0099ff',
+    green: '#2bc64f'
 }
