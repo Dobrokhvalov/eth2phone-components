@@ -13,7 +13,7 @@ storiesOf('Components', module)
 	    <Button onClick={action('clicked')} disabled={true}>Hello Button</Button>
     ))
     .addWithJSX('Button primary', () => (
-	    <Button onClick={action('clicked')} disabled={true} className={'primary'} fontColor={'white'} backgroundColor={e2pColors.blue}>Hello Button</Button>
+	    <Button onClick={action('clicked')} disabled={true} className={'primary'} fontColor={'white'} buttonColor={e2pColors.blue}>Hello Button</Button>
     ))
      .addWithJSX('TransferStepsBar (active)', () => (
 	 <div>Not Implemented!</div>
@@ -49,4 +49,3 @@ storiesOf('Send Screens', module)
 const e2pColors = {
     blue: '#0099ff'
 }
-

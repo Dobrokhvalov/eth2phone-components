@@ -13,7 +13,7 @@ class e2pButton extends React.Component {
                 width: 205,
                 height: 38,
                 borderRadius: 12,
-                backgroundColor: '#0099ff',
+                backgroundColor: this.props.buttonColor,
                 color: this.props.fontColor,
                 fontSize: 18
             }} onClick={this.handleClick}>
