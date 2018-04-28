@@ -4,15 +4,22 @@ import { Button } from 'react-bootstrap';
 
 class e2pButton extends React.Component {
     handleClick = () => {
-	console.log("button pressed");
+        console.log("button pressed");
     };
 
     render() {
-	return (
-		<Button bsStyle="primary" onClick={this.handleClick}>
-		{this.props.children}
-		</Button>
-	);
+        return (
+            <Button style={{
+                width: 205,
+                height: 38,
+                borderRadius: 12,
+                backgroundColor: '#0099ff',
+                color: this.props.fontColor,
+                fontSize: 18
+            }} onClick={this.handleClick}>
+                {this.props.children}
+            </Button>
+        );
     }
 }
 
