@@ -4,6 +4,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import Button from '../components/Button';
 import ButtonPrimary from '../components/ButtonPrimary';
+import NumberInput from '../components/NumberInput'
+import TransferStepsBar from '../components/TransferStepsBar'
 
 
 storiesOf('Components', module)
@@ -17,13 +19,13 @@ storiesOf('Components', module)
 	    <ButtonPrimary onClick={action('clicked')} className={'primary'} fontColor={'white'} buttonColor={e2pColors.blue}>Hello Button</ButtonPrimary>
     ))
      .addWithJSX('TransferStepsBar (active)', () => (
-	 <div>Not Implemented!</div>
+	 <TransferStepsBar step={1}/>
      ))
      .addWithJSX('TransferStepsBar (completed)', () => (
 	 <div>Not Implemented!</div>
      ))
      .addWithJSX('NumberInput', () => (
-	 <div>Not Implemented!</div>
+	 <NumberInput placeHolder={"placeholder text"}></NumberInput>
      ))
      .addWithJSX('PhoneInput', () => (
 	 <div>Not Implemented!</div>
