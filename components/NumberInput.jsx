@@ -11,8 +11,6 @@ class e2pInput extends React.Component {
                 borderRadius: 12,
                 borderColor: '#f5f5f5',
                 borderWidth: 2,
-                opacity: this.props.opacity,
-                color: this.props.fontColor,
                 fontSize: 16,
                 textAlign: 'center',
                 boxShadow: 0,

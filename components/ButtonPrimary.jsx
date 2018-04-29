@@ -13,6 +13,7 @@ class e2pButtonPrimary extends React.Component {
                 width: 205,
                 height: 38,
                 borderRadius: 12,
+                borderColor: this.props.buttonColor,                
                 backgroundColor: this.props.buttonColor,
                 color: this.props.fontColor,
                 fontSize: 18
