@@ -9,11 +9,14 @@ class e2pInput extends React.Component {
                 width: 290,
                 height: 38,
                 borderRadius: 12,
-                border: '4 solid #f5f5f5',
+                borderColor: '#f5f5f5',
+                borderWidth: 2,
                 opacity: this.props.opacity,
                 color: this.props.fontColor,
-                fontSize: 9
-            }}>
+                fontSize: 16,
+                textAlign: 'center',
+                boxShadow: 0,
+            }} placeholder={this.props.placeholder}>
                 {this.props.children}
             </FormControl>
         )

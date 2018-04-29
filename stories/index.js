@@ -25,7 +25,7 @@ storiesOf('Components', module)
 	 <div>Not Implemented!</div>
      ))
      .addWithJSX('NumberInput', () => (
-	 <NumberInput placeHolder={"placeholder text"}></NumberInput>
+	 <NumberInput placeholder={"placeholder text"}></NumberInput>
      ))
      .addWithJSX('PhoneInput', () => (
 	 <div>Not Implemented!</div>
