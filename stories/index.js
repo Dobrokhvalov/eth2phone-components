@@ -37,10 +37,10 @@ storiesOf('Components', module)
 
 storiesOf('Header', module)
     .addWithJSX('AddressButton', () => (
-        <AddressButton className={'addressButton'}>0x...545</AddressButton>
+        <AddressButton className={'addressButton'} address="0xfa071DCf1FA4e777a9fAbFB6383Fb54e73B9D545"/>
     ))
     .addWithJSX('Header', () => (
-        <Header />
+        <Header address="0xfa071DCf1FA4e777a9fAbFB6383Fb54e73B9D545"/>
     ));
 
 
