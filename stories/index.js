@@ -6,6 +6,7 @@ import { action } from '@storybook/addon-actions';
 import Button from '../components/Button';
 import ButtonPrimary from '../components/ButtonPrimary';
 import NumberInput from '../components/NumberInput';
+import PhoneInput from '../components/PhoneInput';
 import TransferStepsBar from '../components/TransferStepsBar';
 import AddressButton from '../components/AddressButton';
 import Header from '../components/Header';
@@ -24,14 +25,11 @@ storiesOf('Components', module)
     .addWithJSX('TransferStepsBar (active)', () => (
         <TransferStepsBar step={1} />
     ))
-    .addWithJSX('TransferStepsBar (completed)', () => (
-        <div>Not Implemented!</div>
-    ))
     .addWithJSX('NumberInput', () => (
         <NumberInput placeholder={"placeholder text"}></NumberInput>
     ))
     .addWithJSX('PhoneInput', () => (
-        <div>Not Implemented!</div>
+        <PhoneInput/>
     ));
 
 

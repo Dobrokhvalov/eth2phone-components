@@ -6,9 +6,12 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
+    "libphonenumber-js": "^1.1.11",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "react-phone-input-2": "git+https://github.com/sashamihaha/react-phone-input-2.git",
+    "react-phone-number-input": "^1.0.11"
   },
   "devDependencies": {
     "@storybook/addon-console": "^1.0.0",
