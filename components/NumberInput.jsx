@@ -8,13 +8,16 @@ class e2pInput extends React.Component {
             <FormControl style={{
                 width: 290,
                 height: 38,
+                display: 'block',
+                margin: 'auto',
                 borderRadius: 12,
                 borderColor: '#f5f5f5',
                 borderWidth: 2,
                 fontSize: 16,
                 textAlign: 'center',
                 boxShadow: 0,
-            }} placeholder={this.props.placeholder}>
+            }} placeholder={this.props.placeholder}
+            onChange={this.props.onChange}>
                 {this.props.children}
             </FormControl>
         )

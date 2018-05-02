@@ -8,6 +8,7 @@ class e2pButton extends React.Component {
     };
 
     render() {
+        console.log("PROPS: ", this.props.disabled)
         return (
             <Button style={{
                 width: 133,
@@ -16,9 +17,10 @@ class e2pButton extends React.Component {
                 borderColor: this.props.buttonColor,
                 backgroundColor: this.props.buttonColor,
                 opacity: this.props.opacity,
-                color: this.props.fontColor,
-                fontSize: 18
-            }} onClick={this.handleClick}>
+                color: '#fff',
+                fontSize: 18,
+            }} onClick={this.props.onClick}
+            disabled={this.props.disabled}>
                 {this.props.children}
             </Button>
         );

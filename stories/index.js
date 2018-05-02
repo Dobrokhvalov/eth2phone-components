@@ -9,7 +9,9 @@ import NumberInput from '../components/NumberInput';
 import PhoneInput from '../components/PhoneInput';
 import TransferStepsBar from '../components/TransferStepsBar';
 import AddressButton from '../components/AddressButton';
+import SendForm from '../components/SendForm';
 import Header from '../components/Header';
+import SMSCodeScreen from '../components/SMSCodeScreen'
 
 
 storiesOf('Components', module)
@@ -44,11 +46,16 @@ storiesOf('Header', module)
 
 storiesOf('Send Screens', module)
     .addWithJSX('SendForm', () => (
-        <div>Not Implemented!</div>
+        <SendForm/>
     ))
     .addWithJSX('TransferInProgress', () => (
         <div>Not Implemented!</div>
     ))
+
+storiesOf('Receive Screens', module)
+.addWithJSX('SMSCodeScreen', () => (
+    <SMSCodeScreen/>
+))
 
 const e2pColors = {
     blue: '#0099ff',
