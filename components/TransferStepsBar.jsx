@@ -13,7 +13,7 @@ class e2pTransferBar extends React.Component {
     _renderTransferBar = (step) => {
         let title, progBarStyle, dot1Style, dot2Style, dot3Style, textStyle1, textStyle2, textStyle3, pendingText;
         const labelStyle = { width: 60, height: 15, textAlign: "center", fontSize: 12 };
-
+	
         switch (this.props.step) {
             case 1:
                 progBarStyle = { width: 0, height: 4, backgroundColor: "#33aeff" };
@@ -44,7 +44,7 @@ class e2pTransferBar extends React.Component {
                         <div className="progress-bar" role="progressbar" style={progBarStyle} ></div>
                     </div>
                     <div className="dot" style={dot1Style}></div>
-                    <div className="dot" style={dot2Style}></div>
+                    <div className={this.props.step===2 ? 'dot scale-up-center': 'dot'} style={dot2Style}></div>
                     <div className="dot" style={dot3Style}></div>
 
                 </div>

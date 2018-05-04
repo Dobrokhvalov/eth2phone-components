@@ -25,7 +25,7 @@ storiesOf('Components', module)
         <ButtonPrimary onClick={action('clicked')} className={'primary'} fontColor={'white'} buttonColor={e2pColors.blue}>Hello Button</ButtonPrimary>
     ))
     .addWithJSX('TransferStepsBar (active)', () => (
-        <TransferStepsBar step={1} />
+        <TransferStepsBar step={2} />
     ))
     .addWithJSX('NumberInput', () => (
         <NumberInput placeholder={"placeholder text"}></NumberInput>
